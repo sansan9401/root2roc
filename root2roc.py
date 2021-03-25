@@ -230,6 +230,7 @@ if __name__ =='__main__':
         configs=sorted(configs,key=lambda k: k['icharge'])
         configs=sorted(configs,key=lambda k: k['itype'])
         configs=sorted(configs,key=lambda k: k['iflavor'])
+        configs=sorted(configs,key=lambda k: k['iset'])
     elif os.path.isfile(args.input):
         with open(args.input) as f:
             configs=json.load(f)
