@@ -1,0 +1,52 @@
+Electron efficiency for UL2016preVFP, UL2016postVFP, UL2017, UL2018
+
+Version: 4 (2021Nov22)
+
+Inputs:
+UL2016preVFP
+/SingleElectron/Run2016[B-F]-21Feb2020(_ver2)_UL2016_HIPM-v1/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+UL2016postVFP
+/SingleElectron/Run2016[F-H]-21Feb2020_UL2016-v[1-2]/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+UL2017
+/SingleElectron/Run2017[B-F]-09Aug2019_UL2017(_rsb)-v[1-2]/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+UL2018
+/EGamma/Run2018[A-D]-12Nov2019_UL2018-v[2,8]/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1/MINIAODSIM
+
+
+Flags:
+		type	comment
+ID		0	ID efficiency, gsfElectron -> MediumID (or TightID+SelectiveCharge)
+Single		1	Single electron triggers include prescale effect (2017:Ele27_WPTight_Gsf||Ele32_WPTight_Gsf, 2018:Ele28_WPTight_Gsf||Ele32_WPTight_Gsf)
+DoubleLeg1	2	Double electron trigger Leg1 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg1Filter
+DoubleLeg2	3	Double electron trigger Leg2 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg2Filter
+SingleLow	4	Single electron trigger efficiency with lower pT threshold (2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf)
+SingleHigh	5	Single electron trigger efficiency with higher pT threshold (Ele32_WPTight_Gsf)
+RECO		6	Reconstruction efficiency, SuperCluster -> gsfElectron, ref:https://twiki.cern.ch/twiki/bin/view/CMS/EgammaUL2016To2018
+			Only ptAbove20 results are included since ptBelow20 results have large uncertainties
+
+
+Variations:
+		set	nmember	comment
+Default		0	1	nominal efficiency
+Stat		1	100	stat. replicas
+AltBkg		2	1	Alternative background shape (CMSShape->Expo)
+AltSig		3	1	Alternative signal shape (MCRecoShape*Gaus->MCGen*CB)
+AltTag		4	1	Alternative Tag selection (higher tag pT threshold)
+AltMC		5	1	Alternative MC generator (MiNNLO->MadGraph)
+AltSub		6	1	Alternative Same-Sign subtraction weight (-1.0 -> -0.6)
+NoGenMatching	7	1	Without gen-matching
+
+
+ChangeLog:
+v3: Improve Leg1 low pT by considering L1 pt threshold
+v4: Changing evaluation method for simulation (counting ->  fitting)
+    Same-Sign subtraction
+    Additional systematic sources

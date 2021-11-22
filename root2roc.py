@@ -6,68 +6,37 @@ Type=["ID","SingleTrigger","DoubleTriggerLeg1","DoubleTriggerLeg2","SingleTrigge
 Charge=["Plus","Minus"]
 DEBUG=1
 NREPLICA=100
-def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,iset=0,imem=0):
+
+def GetListOfKeys(fname):
+    fin=ROOT.TFile(fname)
+    keys=[obj.GetName() for obj in fin.GetListOfKeys()]
+    fin.Delete()
+    return keys
+
+def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,iset=None,imem=None):
     if DEBUG>1: print("File: "+fname)
     ref=None
     ref_cands=[]
     if key==None:
-        fin=ROOT.TFile(fname)
-        keys=[obj.GetName() for obj in fin.GetListOfKeys()]
-        fin.Delete()
         if isMC==0:
-            if iset==0: 
-                cands=["muonEffi_data_eta_pt","EGamma_EffData2D"]
-            elif iset==1: 
-                cands=["EGamma_EffData2D_stat","statData"]
-                ref_cands=["muonEffi_data_eta_pt","EGamma_EffData2D"]
-                imem=None
-            elif iset==2:
-                cands=["EGamma_EffData2D_altBkg","altBkgModel"]
-            elif iset==3:
-                cands=["EGamma_EffData2D_altSig","altSignalModel"]
-            elif iset==4:
-                cands=["EGamma_EffData2D"]
-            elif iset==5:
-                cands=["EGamma_EffData2D"]
+            key="data"
         elif isMC==1:
-            if iset==0:
-                cands=["muonEffi_mc_eta_pt","EGamma_EffMC2D"]
-            elif iset==1: 
-                cands=["EGamma_EffMC2D_stat","statMC"]
-                ref_cands=["muonEffi_mc_eta_pt","EGamma_EffMC2D"]
-                imem=None
-            elif iset==2:
-                cands=["EGamma_EffMC2D"]
-            elif iset==3:
-                cands=["EGamma_EffMC2D"]
-            elif iset==4:
-                cands=["EGamma_EffMC2D_altMC","altMCEff"]
-            elif iset==5:
-                cands=["EGamma_EffMC2D_altTag","altTagSelection"]
-                
+            key="sim"
         else:
-            print("[Warning] no information about hist key")
-            return None
-        for cand in cands:
-            if cand in keys:
-                key=cand
-                break
-        for cand in ref_cands:
-            if cand in keys:
-                ref=cand
-                break
-        if key==None:
             print("[Warning] Cannot determine key")
             return None
-        else:
-            if DEBUG>1: print("Key: "+key+" (auto)")
+            
+        if iset>0:
+            key+="_s{}m{}".format(iset-1,imem)
+            
+        if DEBUG>1: print("Key: "+key+" (auto)")
     else:
         if DEBUG>1: print("Key: "+key)
 
     if isMC==None:
         if "data" in key.lower():
             isMC=0
-        elif "mc" in key.lower():
+        elif "sim" in key.lower():
             isMC=1
         if isMC==None:
             print("[Warning] Cannot determine whether data or MC")
@@ -95,7 +64,7 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
         if DEBUG>1: print("Flavor: "+Flavor[iflavor])
 
     if itype==None:
-        if "egammaEffi_ptAbove20" in fname:
+        if "RECO" in fname:
             itype=6
         elif not re.search("Mu[0-9]",fname) and not re.search("Ele[0-9][0-9]",fname):
             itype=0
@@ -141,6 +110,34 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
             if DEBUG>1: print("Charge: "+Charge[icharge]+" (auto)")
     else:
         if DEBUG>1: print("Charge: "+Charge[icharge])
+
+    if iset==None:
+        if key in ["data","sim"]:
+            iset=0
+        elif re.search('_s([0-9]*)m',key):
+            iset=int(re.search('_s([0-9]*)m',key).group(1))+1
+        if iset==None:
+            print("[Warning] Cannot determine iset")
+            return None
+        else:
+            if DEBUG>1: print("iset: "+str(iset)+" (auto)")
+    else:
+        if DEBUG>1: print("iset: "+str(iset))
+
+    if imem==None:
+        if key in ["data","sim"]:
+            imem=0
+        elif iset==1:
+            imem=-1
+        elif re.search('_s[0-9]*m([0-9]*)',key):
+            imem=int(re.search('_s[0-9]*m([0-9]*)',key).group(1))
+        if imem==None:
+            print("[Warning] Cannot determine imem")
+            return None
+        else:
+            if DEBUG>1: print("imem: "+str(imem)+" (auto)")
+    else:
+        if DEBUG>1: print("imem: "+str(imem))
         
     return {"file":fname,"key":key,"isMC":isMC,"iflavor":iflavor,"itype":itype,"icharge":icharge,"iset":iset,"imem":imem,"ref":ref}
 
@@ -155,11 +152,11 @@ def root2str(config):
     imem=config["imem"]
 
     out=["## "+fname+" "+key]
-    if iset==1 and imem==None:
+    if iset==1 and imem==-1:
         for i in range(NREPLICA):
             c=config.copy()
             c["imem"]=i
-            out+=root2str(c)
+            out+=root2str(c)        
     else:
         fin=ROOT.TFile(str(fname))
         hist=fin.Get(str(key))
@@ -168,7 +165,7 @@ def root2str(config):
         ptAxis=hist.GetYaxis()
     
         etaNbins=etaAxis.GetNbins()
-        etaBins=[etaAxis.GetBinUpEdge(i) for i in range(etaNbins+1)]
+        etaBins=[round(etaAxis.GetBinUpEdge(i),4) for i in range(etaNbins+1)]
         ptNbins=ptAxis.GetNbins()
         ptBins=[ptAxis.GetBinUpEdge(i) for i in range(ptNbins+1)]
     
@@ -179,8 +176,9 @@ def root2str(config):
             random.seed(hash(config["file"]+config["key"]+str(config["imem"])))
             hist_ref=fin.Get(config["ref"])
             contentIsError=False
-            for i in range(hist_ref.GetNcells()):
-                if hist.GetBinContent(i)!=hist_ref.GetBinContent(i): contentIsError=True
+            if hist_ref:
+                for i in range(hist_ref.GetNcells()):
+                    if hist.GetBinContent(i)!=hist_ref.GetBinContent(i): contentIsError=True
         for ieta in range(etaNbins):
             if iset==1:
                 if contentIsError:
@@ -216,16 +214,16 @@ if __name__ =='__main__':
     if os.path.isdir(args.input):
         files=os.popen("find "+args.input+" -type f -name *.root").read().split()
         for fname in files:
-            for isMC in [0,1]:
-                for iset in [0,1,2,3,4,5]:
-                    if "egammaEffi_ptAbove20" in fname:
-                        c=MakeConfig(fname,isMC=isMC,iset=iset,icharge=0)
-                        if c: configs+=[c]
-                        c=MakeConfig(fname,isMC=isMC,iset=iset,icharge=1)
-                        if c: configs+=[c]
-                    else:
-                        c=MakeConfig(fname,isMC=isMC,iset=iset)
-                        if c: configs+=[c]
+            keys=[key for key in GetListOfKeys(fname) if "_sys" not in key and "sf" not in key]
+            for key in keys:
+                if "RECO" in fname:
+                    c=MakeConfig(fname,key,icharge=0)
+                    if c: configs+=[c]
+                    c=MakeConfig(fname,key,icharge=1)
+                    if c: configs+=[c]
+                else:
+                    c=MakeConfig(fname,key)
+                    if c: configs+=[c]
         configs=sorted(configs,key=lambda k: k['isMC'])
         configs=sorted(configs,key=lambda k: k['icharge'])
         configs=sorted(configs,key=lambda k: k['itype'])
@@ -256,7 +254,7 @@ if __name__ =='__main__':
     lines+=["NSET "+str(nset)]
     nmem=[]
     for iset in range(nset):
-        nmem+=[max([c["imem"] if c["imem"]!=None else NREPLICA-1 for c in configs if c["iset"]==iset])+1]
+        nmem+=[max([c["imem"] if c["imem"]!=-1 else NREPLICA-1 for c in configs if c["iset"]==iset])+1]
     lines+=["NMEM "+" ".join([str(i) for i in nmem])]
     for config in configs:
         lines+=root2str(config)
