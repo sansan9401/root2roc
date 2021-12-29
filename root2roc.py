@@ -2,7 +2,7 @@ import os,sys,re,json,random
 import ROOT
 
 Flavor=["Muon","Electron"]
-Type=["ID","SingleTrigger","DoubleTriggerLeg1","DoubleTriggerLeg2","SingleTrigger1","SingleTrigger2","RECO"]
+Type=["ID","Deprecated","DoubleTriggerLeg1","DoubleTriggerLeg2","SingleTrigger1","SingleTrigger2","RECO","SelQ_ID","SelQ_SingleTrigger1","SelQ_SingleTrigger2"]
 Charge=["Plus","Minus"]
 DEBUG=1
 NREPLICA=100
@@ -12,6 +12,15 @@ def GetListOfKeys(fname):
     keys=[obj.GetName() for obj in fin.GetListOfKeys()]
     fin.Delete()
     return keys
+
+def IsUniformBins(axis):
+    if axis is None: return None
+    width=None
+    for i in range(1,axis.GetNbins()+1):
+        if width is None: width=axis.GetBinWidth(i)
+        if abs((axis.GetBinWidth(i)-width)/width)>0.0001:
+            return False
+    return True
 
 def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,iset=None,imem=None):
     if DEBUG>1: print("File: "+fname)
@@ -67,7 +76,10 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
         if "RECO" in fname:
             itype=6
         elif not re.search("Mu[0-9]",fname) and not re.search("Ele[0-9][0-9]",fname):
-            itype=0
+            if "SelQ" not in fname:
+                itype=0
+            else:
+                itype=7
         elif "Leg1" in fname:
             itype=2
         elif "Leg2" in fname:
@@ -76,22 +88,23 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
             itype=2
         elif "Mu8" in fname or "Ele12" in fname:
             itype=3
-        elif "2017" in fname and "Ele27_" in fname:
+        elif "Ele27_" in fname or "Ele28_" in fname:
+            if "SelQ" not in fname:
+                itype=4
+            else:
+                itype=8
+        elif "Mu24_" in fname:
             itype=4
-        elif "2017" in fname and "Mu24_" in fname:
-            itype=4
-        elif "2018" in fname and "Ele28_" in fname:
-            itype=4
-        elif "2017" in fname and "Ele32_" in fname:
+        elif "Ele32_" in fname:
+            if "SelQ" not in fname:
+                itype=5
+            else:
+                itype=9
+        elif "Mu27_" in fname:
             itype=5
-        elif "2017" in fname and "Mu27_" in fname:
-            itype=5
-        elif "2018" in fname and "Ele32_" in fname:
-            itype=5
-        else:
-            itype=1
+
         if itype==None:
-            print("[Warning] Cannot determine Type")
+            print("[Warning] Cannot determine Type of {}".format(fname))
             return None
         else:
             if DEBUG>1: print("Type: "+Type[itype]+" (auto)")
@@ -165,12 +178,19 @@ def root2str(config):
         ptAxis=hist.GetYaxis()
     
         etaNbins=etaAxis.GetNbins()
-        etaBins=[round(etaAxis.GetBinUpEdge(i),4) for i in range(etaNbins+1)]
         ptNbins=ptAxis.GetNbins()
-        ptBins=[ptAxis.GetBinUpEdge(i) for i in range(ptNbins+1)]
-    
-        out+=["ETA {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=etaNbins,bintype=-1,bins=" ".join(map(str,etaBins)))]
-        out+=["PT {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=ptNbins,bintype=-1,bins=" ".join(map(str,ptBins)))]
+
+        if IsUniformBins(etaAxis):
+            out+=["ETA {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=etaNbins,binwidth=etaAxis.GetBinWidth(1),lowedge=etaAxis.GetBinLowEdge(1))]
+        else:
+            etaBins=[round(etaAxis.GetBinUpEdge(i),4) for i in range(etaNbins+1)]
+            out+=["ETA {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=etaNbins,bintype=-1,bins=" ".join(map(str,etaBins)))]            
+
+        if IsUniformBins(ptAxis):
+            out+=["PT {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=ptNbins,bintype=ptAxis.GetBinWidth(1),lowedge=ptAxis.GetBinLowEdge(1))]
+        else:
+            ptBins=[ptAxis.GetBinUpEdge(i) for i in range(ptNbins+1)]
+            out+=["PT {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=ptNbins,bintype=-1,bins=" ".join(map(str,ptBins)))]
 
         if iset==1:
             random.seed(hash(config["file"]+config["key"]+str(config["imem"])))

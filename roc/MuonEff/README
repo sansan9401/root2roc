@@ -1,6 +1,6 @@
 Muon efficiency for UL2016preVFP, UL2016postVFP, UL2017, UL2018
 
-Version: (2021Nov22)
+Version: (2021Dec29)
 
 Inputs:
 UL2016preVFP
@@ -24,10 +24,10 @@ UL2018
 Flags:
 		type	comment
 ID		0	ID efficiency, TrackerMuon -> MediumID+LooseTrkIso
-Single		1	Single muon trigger efficiency (2016,2018: IsoMu24)
+Deprecated	1	Empty
 DoubleLeg1	2	Double muon trigger Leg1 filter efficiency
 DoubleLeg2	3	Double muon trigger Leg2 filter efficiency
-SingleLow	4	Single muon trigger efficiency with lower pT threshold (2017:IsoMu24)
+SingleLow	4	Single muon trigger efficiency with lower pT threshold (IsoMu24)
 SingleHigh	5	Single muon trigger efficiency with higher pT threshold (2017:IsoMu27)
 
 
@@ -42,3 +42,6 @@ AltMassBin	6	2	Alternative mass binning (nbins=60 -> 50,75)
 
 
 ChangeLog:
+2021Dec29: Changing syntax for the fixed bin width
+           Using Type index 4 instead of index 1
+	   
