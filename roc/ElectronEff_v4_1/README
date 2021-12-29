@@ -23,17 +23,16 @@ UL2018
 
 Flags:
 		type	comment
-ID		0	ID efficiency, gsfElectron -> MediumID
-Deprecated	1	Empty
-DoubleLeg1	2	Double electron trigger Leg1 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg1Filter
-DoubleLeg2	3	Double electron trigger Leg2 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg2Filter
-SingleLow	4	Single electron trigger efficiency with lower pT threshold (2016,2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf)
-SingleHigh	5	Single electron trigger efficiency with higher pT threshold (2017,2018:Ele32_WPTight_Gsf)
-RECO		6	Reconstruction efficiency, SuperCluster -> gsfElectron, ref:https://twiki.cern.ch/twiki/bin/view/CMS/EgammaUL2016To2018
+RECO		0	Reconstruction efficiency, SuperCluster -> gsfElectron, ref:https://twiki.cern.ch/twiki/bin/view/CMS/EgammaUL2016To2018
 			Only ptAbove20 results are included since ptBelow20 results have large uncertainties
-SelQ ID		7	Charge ID efficiency, MediumID -> Selective charge ID
-SelQ SingleLow	8	Single electron trigger efficiency with lower pT threshold (2016,2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf) for MediumID+SelQ
-SelQ SingleHigh	9	Single electron trigger efficiency with higher pT threshold (2017,2018:Ele32_WPTight_Gsf) for MediumID+SelQ
+ID		1	ID efficiency, gsfElectron -> MediumID
+SingleLow	2	Single electron trigger efficiency with lower pT threshold (2016,2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf)
+SingleHigh	3	Single electron trigger efficiency with higher pT threshold (2017,2018:Ele32_WPTight_Gsf)
+DoubleLeg1	4	Double electron trigger Leg1 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg1Filter
+DoubleLeg2	5	Double electron trigger Leg2 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg2Filter
+SelQ ID		6	Charge ID efficiency, MediumID -> Selective charge ID
+SelQ SingleLow	7	Single electron trigger efficiency with lower pT threshold (2016,2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf) for MediumID+SelQ
+SelQ SingleHigh	8	Single electron trigger efficiency with higher pT threshold (2017,2018:Ele32_WPTight_Gsf) for MediumID+SelQ
 
 
 Variations:
@@ -55,4 +54,4 @@ v4: Changing evaluation method for simulation (counting ->  fitting)
     Additional systematic sources
 v4.1: Using eta instead of eta_SC
       MediumID+SelQ efficiency instead of TightID+SelQ
-      
+      New Type index

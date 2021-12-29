@@ -23,12 +23,11 @@ UL2018
 
 Flags:
 		type	comment
-ID		0	ID efficiency, TrackerMuon -> MediumID+LooseTrkIso
-Deprecated	1	Empty
-DoubleLeg1	2	Double muon trigger Leg1 filter efficiency
-DoubleLeg2	3	Double muon trigger Leg2 filter efficiency
-SingleLow	4	Single muon trigger efficiency with lower pT threshold (IsoMu24)
-SingleHigh	5	Single muon trigger efficiency with higher pT threshold (2017:IsoMu27)
+ID		1	ID efficiency, TrackerMuon -> MediumID+LooseTrkIso
+SingleLow	2	Single muon trigger efficiency with lower pT threshold (IsoMu24)
+SingleHigh	3	Single muon trigger efficiency with higher pT threshold (2017:IsoMu27)
+DoubleLeg1	4	Double muon trigger Leg1 filter efficiency
+DoubleLeg2	5	Double muon trigger Leg2 filter efficiency
 
 
 Variations:
@@ -43,5 +42,5 @@ AltMassBin	6	2	Alternative mass binning (nbins=60 -> 50,75)
 
 ChangeLog:
 2021Dec29: Changing syntax for the fixed bin width
-           Using Type index 4 instead of index 1
+	   New Type index
 	   

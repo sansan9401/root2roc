@@ -2,7 +2,7 @@ import os,sys,re,json,random
 import ROOT
 
 Flavor=["Muon","Electron"]
-Type=["ID","Deprecated","DoubleTriggerLeg1","DoubleTriggerLeg2","SingleTrigger1","SingleTrigger2","RECO","SelQ_ID","SelQ_SingleTrigger1","SelQ_SingleTrigger2"]
+Type=["RECO","ID","SLT1","SLT2","DLTLeg1","DLTLeg2","SelQ_ID","SelQ_SLT1","SelQ_SLT2"]
 Charge=["Plus","Minus"]
 DEBUG=1
 NREPLICA=100
@@ -74,34 +74,34 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
 
     if itype==None:
         if "RECO" in fname:
-            itype=6
+            itype=0
         elif not re.search("Mu[0-9]",fname) and not re.search("Ele[0-9][0-9]",fname):
             if "SelQ" not in fname:
-                itype=0
+                itype=1
             else:
-                itype=7
+                itype=6
         elif "Leg1" in fname:
-            itype=2
+            itype=4
         elif "Leg2" in fname:
-            itype=3
+            itype=5
         elif "Mu17" in fname or "Ele23" in fname:
-            itype=2
+            itype=4
         elif "Mu8" in fname or "Ele12" in fname:
-            itype=3
+            itype=5
         elif "Ele27_" in fname or "Ele28_" in fname:
             if "SelQ" not in fname:
-                itype=4
+                itype=2
             else:
-                itype=8
+                itype=7
         elif "Mu24_" in fname:
-            itype=4
+            itype=2
         elif "Ele32_" in fname:
             if "SelQ" not in fname:
-                itype=5
+                itype=3
             else:
-                itype=9
+                itype=8
         elif "Mu27_" in fname:
-            itype=5
+            itype=3
 
         if itype==None:
             print("[Warning] Cannot determine Type of {}".format(fname))
@@ -285,7 +285,7 @@ if __name__ =='__main__':
     print("------------------------------------ [ "+args.output+" ] -----------------------------------------")
     print("{:9}{:4}{:7}{:6}{:19}{:7}{:80.79}{:20}".format("Flavor","Set","Member","isMC","Type","Charge","File","Key"))
     for config in configs:
-        print("{:9}{:<4}{:<7}{:6}{:19}{:7}{:80.79}{:20}".format(Flavor[config["iflavor"]],config["iset"],config["imem"],str(bool(config["isMC"])),Type[config["itype"]],Charge[config["icharge"]],config["file"],config["key"]))
+        print("{:9}{:<4}{:<7}{:6}{:19}{:7}{:80.79}{:20}".format(Flavor[config["iflavor"]],config["iset"],config["imem"],str(bool(config["isMC"])),str(config["itype"])+":"+Type[config["itype"]],Charge[config["icharge"]],config["file"],config["key"]))
     
     if not os.path.exists(os.path.dirname(os.path.abspath(args.output))):
         os.makedirs(os.path.dirname(args.output))
