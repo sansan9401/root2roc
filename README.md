@@ -1,8 +1,30 @@
+# Efficiency
+* Electron
+  * [v7](roc/ElectronEff_v7)
+  * [v4_1](roc/ElectronEff_v4_1)
+  * [v4](roc/ElectronEff_v4)
+* [Muon](roc/MuonEff)
+
 # Quick start
 * Try
 ```
-python root2roc.py -h
-ls -1 root/|xargs -i python root2roc.py root/{} roc/{}.txt
+usage: root2roc.py [-h] [--export-config CONFIG_OUT] [--debug] input [output]
+
+Convert root file efficiency to Rochester txt format
+
+positional arguments:
+  input                 directory containing root files or json file
+  output                output path
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --export-config CONFIG_OUT
+                        export config as json format
+  --debug               debug mode
+
+## EXAMPLE
+python root2roc.py root/ElectronEff_v7/electron_2018
+### if you don't specify the output path, it will be same with the input path except root/->roc/
 ```
 
 * It determine the 'flavor', 'type', and 'charge' using file name.
