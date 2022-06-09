@@ -3,7 +3,7 @@ import ROOT
 
 Flavor=["Muon","Electron"]
 Type=["RECO","ID","SLT1","SLT2","DLTLeg1","DLTLeg2","SelQ_ID","SelQ_SLT1","SelQ_SLT2"]
-Charge=["Plus","Minus"]
+Charge=["Plus","Minus","Inclusive"]
 DEBUG=1
 NREPLICA=100
 
@@ -22,7 +22,7 @@ def IsUniformBins(axis):
             return False
     return True
 
-def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,iset=None,imem=None):
+def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,iset=None,imem=None,option=""):
     if DEBUG>1: print("File: "+fname)
     ref=None
     ref_cands=[]
@@ -35,8 +35,8 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
             print("[Warning] Cannot determine key")
             return None
             
-        if iset>0:
-            key+="_s{}m{}".format(iset-1,imem)
+        if iset>1:
+            key+="_s{}m{}".format(iset-2,imem)
             
         if DEBUG>1: print("Key: "+key+" (auto)")
     else:
@@ -116,6 +116,8 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
             icharge=0
         elif "minus" in fname.lower():
             icharge=1
+        else:
+            icharge=2
         if icharge==None:
             print("[Warning] Cannot determine Charge")
             return None
@@ -127,8 +129,10 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
     if iset==None:
         if key in ["data","sim"]:
             iset=0
+        elif "_s0m0" in key and "err" in option:
+            iset=1
         elif re.search('_s([0-9]*)m',key):
-            iset=int(re.search('_s([0-9]*)m',key).group(1))+1
+            iset=int(re.search('_s([0-9]*)m',key).group(1))+2
         if iset==None:
             print("[Warning] Cannot determine iset")
             return None
@@ -140,8 +144,8 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
     if imem==None:
         if key in ["data","sim"]:
             imem=0
-        elif iset==1:
-            imem=-1
+        elif "replica" in option:
+            imem=NREPLICA
         elif re.search('_s[0-9]*m([0-9]*)',key):
             imem=int(re.search('_s[0-9]*m([0-9]*)',key).group(1))
         if imem==None:
@@ -152,7 +156,7 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
     else:
         if DEBUG>1: print("imem: "+str(imem))
         
-    return {"file":fname,"key":key,"isMC":isMC,"iflavor":iflavor,"itype":itype,"icharge":icharge,"iset":iset,"imem":imem,"ref":ref}
+    return {"file":fname,"key":key,"isMC":isMC,"iflavor":iflavor,"itype":itype,"icharge":icharge,"iset":iset,"imem":imem,"ref":ref,"option":option}
 
 def root2str(config):
     fname=config["file"]
@@ -163,9 +167,10 @@ def root2str(config):
     icharge=config["icharge"]
     iset=config["iset"]
     imem=config["imem"]
+    option=config["option"]
 
-    out=["## "+fname+" "+key]
-    if iset==1 and imem==-1:
+    out=["## "+fname+" "+key+" "+option]
+    if "replica" in option and imem>=NREPLICA:
         for i in range(NREPLICA):
             c=config.copy()
             c["imem"]=i
@@ -192,7 +197,7 @@ def root2str(config):
             ptBins=[ptAxis.GetBinUpEdge(i) for i in range(ptNbins+1)]
             out+=["PT {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=ptNbins,bintype=-1,bins=" ".join(map(str,ptBins)))]
 
-        if iset==1:
+        if "replica" in option:
             random.seed(hash(config["file"]+config["key"]+str(config["imem"])))
             hist_ref=fin.Get(config["ref"])
             contentIsError=False
@@ -200,13 +205,16 @@ def root2str(config):
                 for i in range(hist_ref.GetNcells()):
                     if hist.GetBinContent(i)!=hist_ref.GetBinContent(i): contentIsError=True
         for ieta in range(etaNbins):
-            if iset==1:
+            if "replica" in option:
                 if contentIsError:
                     effs=[random.gauss(hist_ref.GetBinContent(ieta+1,ipt+1),hist.GetBinContent(ieta+1,ipt+1)) for ipt in range(ptNbins)]
                 else:
                     effs=[random.gauss(hist.GetBinContent(ieta+1,ipt+1),hist.GetBinError(ieta+1,ipt+1)) for ipt in range(ptNbins)]
-            else: 
+            elif "err" in option:    
+                effs=[hist.GetBinError(ieta+1,ipt+1) for ipt in range(ptNbins)]
+            else:
                 effs=[hist.GetBinContent(ieta+1,ipt+1) for ipt in range(ptNbins)]
+                
             effs=[max(0,min(1,eff)) for eff in effs]
             out+=["{flavor} {set} {mem} {isMC} {type} {charge} {ieta} {effs}".format(flavor=iflavor,set=iset,mem=imem,isMC=int(isMC),type=itype,charge=icharge,ieta=ieta,effs=" ".join(map("{:.3f}".format,effs)))]
             if any(x>1 for x in effs):
@@ -236,10 +244,10 @@ if __name__ =='__main__':
         for fname in files:
             keys=[key for key in GetListOfKeys(fname) if "_sys" not in key and "sf" not in key]
             for key in keys:
-                if "RECO" in fname:
-                    c=MakeConfig(fname,key,icharge=0)
+                if "_s0m0" in key:
+                    c=MakeConfig(fname,key,option="err")
                     if c: configs+=[c]
-                    c=MakeConfig(fname,key,icharge=1)
+                    c=MakeConfig(fname,key,option="replica")
                     if c: configs+=[c]
                 else:
                     c=MakeConfig(fname,key)
@@ -258,7 +266,8 @@ if __name__ =='__main__':
         for j in range(i+1,len(configs)):
             if configs[i]["iflavor"]==configs[j]["iflavor"] and configs[i]["iset"]==configs[j]["iset"] \
                and configs[i]["imem"]==configs[j]["imem"] and configs[i]["isMC"]==configs[j]["isMC"] \
-               and configs[i]["itype"]==configs[j]["itype"] and configs[i]["icharge"]==configs[j]["icharge"]:
+               and configs[i]["itype"]==configs[j]["itype"] and configs[i]["icharge"]==configs[j]["icharge"] \
+               and configs[i]["option"]==configs[j]["option"]:
                 print("[Error] duplicated configs")
                 print(configs[i])
                 print(configs[j])
@@ -274,7 +283,7 @@ if __name__ =='__main__':
     lines+=["NSET "+str(nset)]
     nmem=[]
     for iset in range(nset):
-        nmem+=[max([c["imem"] if c["imem"]!=-1 else NREPLICA-1 for c in configs if c["iset"]==iset])+1]
+        nmem+=[max([c["imem"] if "replica" not in c["option"] else NREPLICA-1 for c in configs if c["iset"]==iset]+[-1])+1]
     lines+=["NMEM "+" ".join([str(i) for i in nmem])]
     for config in configs:
         lines+=root2str(config)
@@ -283,9 +292,19 @@ if __name__ =='__main__':
         args.output=args.input.replace("root/","roc/").strip('/')+".txt"
 
     print("------------------------------------ [ "+args.output+" ] -----------------------------------------")
-    print("{:9}{:4}{:7}{:6}{:19}{:7}{:80.79}{:20}".format("Flavor","Set","Member","isMC","Type","Charge","File","Key"))
+    print("{:9}{:4}{:5}{:7}{:15}{:12}{:80.79}{:20}{:10}".format("Flavor","Set","Mem","isMC","Type","Charge","File","Key","Option"))
     for config in configs:
-        print("{:9}{:<4}{:<7}{:6}{:19}{:7}{:80.79}{:20}".format(Flavor[config["iflavor"]],config["iset"],config["imem"],str(bool(config["isMC"])),str(config["itype"])+":"+Type[config["itype"]],Charge[config["icharge"]],config["file"],config["key"]))
+        print("{:9}{:<4}{:<5}{:7}{:15}{:12}{:80.79}{:20}{:10}".format(
+            Flavor[config["iflavor"]],
+            config["iset"],
+            config["imem"],
+            str(config["isMC"])+":"+("MC" if config["isMC"] else "data"),
+            str(config["itype"])+":"+Type[config["itype"]],
+            str(config["icharge"])+":"+Charge[config["icharge"]],
+            config["file"],
+            config["key"],
+            config["option"],
+        ))
     
     if not os.path.exists(os.path.dirname(os.path.abspath(args.output))):
         os.makedirs(os.path.dirname(args.output))
