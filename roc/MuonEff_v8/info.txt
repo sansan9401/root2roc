@@ -513,6 +513,12 @@ Muon     0   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/Is
 Muon     0   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim                           
 Muon     0   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data                          
 Muon     0   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim                           
+Muon     0   0    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data                          
+Muon     0   0    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim                           
+Muon     0   0    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data                          
+Muon     0   0    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim                           
+Muon     0   0    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data                          
+Muon     0   0    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim                           
 Muon     0   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data                          
 Muon     0   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim                           
 Muon     0   0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data                          
@@ -537,6 +543,12 @@ Muon     1   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/Is
 Muon     1   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s0m0            err       
 Muon     1   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s0m0           err       
 Muon     1   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s0m0            err       
+Muon     1   0    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s0m0           err       
+Muon     1   0    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s0m0            err       
+Muon     1   0    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s0m0           err       
+Muon     1   0    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s0m0            err       
+Muon     1   0    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s0m0           err       
+Muon     1   0    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s0m0            err       
 Muon     1   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s0m0           err       
 Muon     1   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s0m0            err       
 Muon     1   0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data_s0m0           err       
@@ -561,6 +573,12 @@ Muon     2   100  0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/Is
 Muon     2   100  1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s0m0            replica   
 Muon     2   100  0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s0m0           replica   
 Muon     2   100  1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s0m0            replica   
+Muon     2   100  0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s0m0           replica   
+Muon     2   100  1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s0m0            replica   
+Muon     2   100  0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s0m0           replica   
+Muon     2   100  1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s0m0            replica   
+Muon     2   100  0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s0m0           replica   
+Muon     2   100  1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s0m0            replica   
 Muon     2   100  0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s0m0           replica   
 Muon     2   100  1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s0m0            replica   
 Muon     2   100  0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data_s0m0           replica   
@@ -597,6 +615,18 @@ Muon     3   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/Is
 Muon     3   1    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s1m1                     
 Muon     3   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s1m0                      
 Muon     3   1    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s1m1                      
+Muon     3   0    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s1m0                     
+Muon     3   1    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s1m1                     
+Muon     3   0    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s1m0                      
+Muon     3   1    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s1m1                      
+Muon     3   0    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s1m0                     
+Muon     3   1    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s1m1                     
+Muon     3   0    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s1m0                      
+Muon     3   1    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s1m1                      
+Muon     3   0    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s1m0                     
+Muon     3   1    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s1m1                     
+Muon     3   0    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s1m0                      
+Muon     3   1    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s1m1                      
 Muon     3   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s1m0                     
 Muon     3   1    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s1m1                     
 Muon     3   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s1m0                      
@@ -645,6 +675,18 @@ Muon     4   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/Is
 Muon     4   1    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s2m1                     
 Muon     4   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s2m0                      
 Muon     4   1    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s2m1                      
+Muon     4   0    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s2m0                     
+Muon     4   1    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s2m1                     
+Muon     4   0    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s2m0                      
+Muon     4   1    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s2m1                      
+Muon     4   0    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s2m0                     
+Muon     4   1    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s2m1                     
+Muon     4   0    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s2m0                      
+Muon     4   1    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s2m1                      
+Muon     4   0    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s2m0                     
+Muon     4   1    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s2m1                     
+Muon     4   0    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s2m0                      
+Muon     4   1    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s2m1                      
 Muon     4   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s2m0                     
 Muon     4   1    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s2m1                     
 Muon     4   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s2m0                      
@@ -681,6 +723,12 @@ Muon     5   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/Is
 Muon     5   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s3m0                      
 Muon     5   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s3m0                     
 Muon     5   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s3m0                      
+Muon     5   0    0:data 3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                data_s3m0                     
+Muon     5   0    1:MC   3:SLT2         0:Plus      root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root                sim_s3m0                      
+Muon     5   0    0:data 3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               data_s3m0                     
+Muon     5   0    1:MC   3:SLT2         1:Minus     root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root               sim_s3m0                      
+Muon     5   0    0:data 3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           data_s3m0                     
+Muon     5   0    1:MC   3:SLT2         2:Inclusive root/MuonEff_v8/muon_2017/IsoMu27_MediumID_LooseTrkIso_Inclusive.root           sim_s3m0                      
 Muon     5   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s3m0                     
 Muon     5   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s3m0                      
 Muon     5   0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data_s3m0                     
@@ -716,6 +764,10 @@ Muon     0   0    0:data 1:ID           2:Inclusive root/MuonEff_v8/muon_2018/Me
 Muon     0   0    1:MC   1:ID           2:Inclusive root/MuonEff_v8/muon_2018/MediumID_LooseTrkIso_Inclusive.root                   sim                           
 Muon     0   0    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                data                          
 Muon     0   0    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim                           
+Muon     0   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data                          
+Muon     0   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim                           
+Muon     0   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data                          
+Muon     0   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim                           
 Muon     0   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data                          
 Muon     0   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim                           
 Muon     0   0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data                          
@@ -736,6 +788,10 @@ Muon     1   0    0:data 1:ID           2:Inclusive root/MuonEff_v8/muon_2018/Me
 Muon     1   0    1:MC   1:ID           2:Inclusive root/MuonEff_v8/muon_2018/MediumID_LooseTrkIso_Inclusive.root                   sim_s0m0            err       
 Muon     1   0    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                data_s0m0           err       
 Muon     1   0    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s0m0            err       
+Muon     1   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s0m0           err       
+Muon     1   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s0m0            err       
+Muon     1   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s0m0           err       
+Muon     1   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s0m0            err       
 Muon     1   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s0m0           err       
 Muon     1   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s0m0            err       
 Muon     1   0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data_s0m0           err       
@@ -756,6 +812,10 @@ Muon     2   100  0:data 1:ID           2:Inclusive root/MuonEff_v8/muon_2018/Me
 Muon     2   100  1:MC   1:ID           2:Inclusive root/MuonEff_v8/muon_2018/MediumID_LooseTrkIso_Inclusive.root                   sim_s0m0            replica   
 Muon     2   100  0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                data_s0m0           replica   
 Muon     2   100  1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s0m0            replica   
+Muon     2   100  0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s0m0           replica   
+Muon     2   100  1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s0m0            replica   
+Muon     2   100  0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s0m0           replica   
+Muon     2   100  1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s0m0            replica   
 Muon     2   100  0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s0m0           replica   
 Muon     2   100  1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s0m0            replica   
 Muon     2   100  0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data_s0m0           replica   
@@ -784,6 +844,14 @@ Muon     3   0    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/Is
 Muon     3   1    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                data_s1m1                     
 Muon     3   0    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s1m0                      
 Muon     3   1    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s1m1                      
+Muon     3   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s1m0                     
+Muon     3   1    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s1m1                     
+Muon     3   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s1m0                      
+Muon     3   1    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s1m1                      
+Muon     3   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s1m0                     
+Muon     3   1    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s1m1                     
+Muon     3   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s1m0                      
+Muon     3   1    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s1m1                      
 Muon     3   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s1m0                     
 Muon     3   1    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s1m1                     
 Muon     3   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s1m0                      
@@ -824,6 +892,14 @@ Muon     4   0    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/Is
 Muon     4   1    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                data_s2m1                     
 Muon     4   0    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s2m0                      
 Muon     4   1    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s2m1                      
+Muon     4   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s2m0                     
+Muon     4   1    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s2m1                     
+Muon     4   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s2m0                      
+Muon     4   1    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s2m1                      
+Muon     4   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s2m0                     
+Muon     4   1    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s2m1                     
+Muon     4   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s2m0                      
+Muon     4   1    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s2m1                      
 Muon     4   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s2m0                     
 Muon     4   1    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s2m1                     
 Muon     4   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s2m0                      
@@ -856,6 +932,10 @@ Muon     5   0    0:data 1:ID           2:Inclusive root/MuonEff_v8/muon_2018/Me
 Muon     5   0    1:MC   1:ID           2:Inclusive root/MuonEff_v8/muon_2018/MediumID_LooseTrkIso_Inclusive.root                   sim_s3m0                      
 Muon     5   0    0:data 2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                data_s3m0                     
 Muon     5   0    1:MC   2:SLT1         0:Plus      root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root                sim_s3m0                      
+Muon     5   0    0:data 2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               data_s3m0                     
+Muon     5   0    1:MC   2:SLT1         1:Minus     root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root               sim_s3m0                      
+Muon     5   0    0:data 2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           data_s3m0                     
+Muon     5   0    1:MC   2:SLT1         2:Inclusive root/MuonEff_v8/muon_2018/IsoMu24_MediumID_LooseTrkIso_Inclusive.root           sim_s3m0                      
 Muon     5   0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               data_s3m0                     
 Muon     5   0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root               sim_s3m0                      
 Muon     5   0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v8/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Minus.root              data_s3m0                     
