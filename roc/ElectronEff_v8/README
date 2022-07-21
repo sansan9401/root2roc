@@ -63,4 +63,4 @@ v7: skip v5 and v6 to sync version with Rochester group
 v8: MiniAODv1 -> MiniAODv2
     Use pT=20 result for pT<20 in ID SF
     Apply prefiring correction (no significant effect)
-    
+    + fixbug(2022Jul22): typo in tag selection in Ele28_SelQ_MediumID
