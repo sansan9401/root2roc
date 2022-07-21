@@ -1,0 +1,46 @@
+Muon efficiency for UL2016preVFP, UL2016postVFP, UL2017, UL2018
+
+Version: (2021Dec29)
+
+Inputs:
+UL2016preVFP
+/SingleMuon/Run2016[B-F]-21Feb2020(_ver2)_UL2016_HIPM-v1/MINIAOD
+/DYJetsToMuMu_M-50_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPV-106X_mcRun2_asymptotic_preVFP_v8-v1/MINIAODSIM
+UL2016postVFP
+/SingleMuon/Run2016[F-H]-21Feb2020_UL2016-v1/MINIAOD
+/DYJetsToMuMu_M-50_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2/MINIAODSIM
+UL2017
+/SingleMuon/Run2017[B-F]-09Aug2019_UL2017-v1/MINIAOD
+/DYJetsToMuMu_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+UL2018
+/SingleMuon/Run2018[A-D]-12Nov2019_UL2018-v[2,3,8]/MINIAOD
+/DYJetsToMuMu_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1/MINIAODSIM
+
+
+Flags:
+		type	comment
+ID		1	ID efficiency, TrackerMuon -> MediumID+LooseTrkIso
+SingleLow	2	Single muon trigger efficiency with lower pT threshold (IsoMu24)
+SingleHigh	3	Single muon trigger efficiency with higher pT threshold (2017:IsoMu27)
+DoubleLeg1	4	Double muon trigger Leg1 filter efficiency
+DoubleLeg2	5	Double muon trigger Leg2 filter efficiency
+
+
+Variations:
+		set	nmember	comment
+Default		0	1	nominal efficiency
+Stat		1	100	stat. replicas
+AltMassWindow	2	2	Alternative Z-mass window
+AltTag		3	2	Alternative Tag isolation (0.15 -> 0.1,0.2)
+AltMC		5	1	Alternative MC generator (MiNNLO->MadGraph)
+AltMassBin	6	2	Alternative mass binning (nbins=60 -> 50,75)
+
+
+ChangeLog:
+2021Dec29: Changing syntax for the fixed bin width
+	   New Type index
+	   
