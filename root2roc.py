@@ -186,7 +186,7 @@ def root2str(config):
         ptNbins=ptAxis.GetNbins()
 
         if IsUniformBins(etaAxis):
-            out+=["ETA {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=etaNbins,binwidth=etaAxis.GetBinWidth(1),lowedge=etaAxis.GetBinLowEdge(1))]
+            out+=["ETA {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=etaNbins,binwidth=round(etaAxis.GetBinWidth(1),4),lowedge=etaAxis.GetBinLowEdge(1))]
         else:
             etaBins=[round(etaAxis.GetBinUpEdge(i),4) for i in range(etaNbins+1)]
             out+=["ETA {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=etaNbins,bintype=-1,bins=" ".join(map(str,etaBins)))]            
