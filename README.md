@@ -4,7 +4,9 @@
   * [v7](roc/ElectronEff_v7)
   * [v4_1](roc/ElectronEff_v4_1)
   * [v4](roc/ElectronEff_v4)
-* [Muon](roc/MuonEff)
+* Muon
+  * [v4](roc/MuonEff_v4)
+  * [v8](roc/MuonEff_v8)
 
 # Quick start
 * Try
