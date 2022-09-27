@@ -156,6 +156,9 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
     else:
         if DEBUG>1: print("imem: "+str(imem))
         
+    if "dummy" in option:
+        key=key.split("_")[0]
+
     return {"file":fname,"key":key,"isMC":isMC,"iflavor":iflavor,"itype":itype,"icharge":icharge,"iset":iset,"imem":imem,"ref":ref,"option":option}
 
 def root2str(config):
@@ -242,16 +245,33 @@ if __name__ =='__main__':
     if os.path.isdir(args.input):
         files=os.popen("find "+args.input+" -type f -name *.root").read().split()
         for fname in files:
-            keys=[key for key in GetListOfKeys(fname) if "_sys" not in key and "sf" not in key]
+            keys=[key for key in GetListOfKeys(fname) if "_sys" not in key and "sf" not in key]                
             for key in keys:
                 if "_s0m0" in key:
                     c=MakeConfig(fname,key,option="err")
                     if c: configs+=[c]
-                    c=MakeConfig(fname,key,option="replica")
-                    if c: configs+=[c]
+                    #c=MakeConfig(fname,key,option="replica")
+                    #if c: configs+=[c]
                 else:
                     c=MakeConfig(fname,key)
                     if c: configs+=[c]
+            ##FIXME: for temporal add dummy set
+            #print keys
+            if "Electron" in args.input:
+                for sample in ["data","sim"]:
+                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(5,0),(6,0),(7,0)]:
+                        key="{}_s{}m{}".format(sample,i,j)
+                        if key not in keys:
+                            c=MakeConfig(fname,key,option="dummy")
+                            if c: configs+=[c]
+            if "Muon" in args.input:
+                for sample in ["data","sim"]:
+                    for (i,j) in [(1,0),(1,1),(2,0),(2,1),(3,0),(4,0),(4,1)]:
+                        key="{}_s{}m{}".format(sample,i,j)
+                        if key not in keys:
+                            c=MakeConfig(fname,key,option="dummy")
+                            if c: configs+=[c]
+
         configs=sorted(configs,key=lambda k: k['isMC'])
         configs=sorted(configs,key=lambda k: k['icharge'])
         configs=sorted(configs,key=lambda k: k['itype'])
