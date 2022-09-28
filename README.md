@@ -1,5 +1,6 @@
 # Efficiency
 * Electron
+  * [v9.2](roc/ElectronEff_v9_2)
   * [v9.1](roc/ElectronEff_v9_1)
   * [v9](roc/ElectronEff_v9)
   * [v8](roc/ElectronEff_v8)
@@ -7,6 +8,7 @@
   * [v4_1](roc/ElectronEff_v4_1)
   * [v4](roc/ElectronEff_v4)
 * Muon
+  * [v9.2](roc/MuonEff_v9_2)
   * [v9.1](roc/MuonEff_v9_1)
   * [v8](roc/MuonEff_v8)
   * [v4](roc/MuonEff_v4)

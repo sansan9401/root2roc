@@ -219,7 +219,7 @@ def root2str(config):
                 effs=[hist.GetBinContent(ieta+1,ipt+1) for ipt in range(ptNbins)]
                 
             effs=[max(0,min(1,eff)) for eff in effs]
-            out+=["{flavor} {set} {mem} {isMC} {type} {charge} {ieta} {effs}".format(flavor=iflavor,set=iset,mem=imem,isMC=int(isMC),type=itype,charge=icharge,ieta=ieta,effs=" ".join(map("{:.3f}".format,effs)))]
+            out+=["{flavor} {set} {mem} {isMC} {type} {charge} {ieta} {effs}".format(flavor=iflavor,set=iset,mem=imem,isMC=int(isMC),type=itype,charge=icharge,ieta=ieta,effs=" ".join(map("{:.5f}".format,effs)))]
             if any(x>1 for x in effs):
                 print("[Warning] efficiency larger than 1")
                 print(out[-1])
