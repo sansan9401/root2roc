@@ -73,7 +73,7 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
         if DEBUG>1: print("Flavor: "+Flavor[iflavor])
 
     if itype==None:
-        if "RECO" in fname:
+        if "RECO" in fname or "TrackerMuon" in fname:
             itype=0
         elif not re.search("Mu[0-9]",fname) and not re.search("Ele[0-9][0-9]",fname):
             if "SelQ" not in fname:
@@ -266,7 +266,7 @@ if __name__ =='__main__':
                             if c: configs+=[c]
             if "Muon" in args.input:
                 for sample in ["data","sim"]:
-                    for (i,j) in [(1,0),(1,1),(2,0),(2,1),(3,0),(4,0),(4,1)]:
+                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(4,1),(5,0),(5,1),(6,0),(6,1)]:
                         key="{}_s{}m{}".format(sample,i,j)
                         if key not in keys:
                             c=MakeConfig(fname,key,option="dummy")
