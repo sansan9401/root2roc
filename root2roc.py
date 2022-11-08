@@ -2,7 +2,7 @@ import os,sys,re,json,random
 import ROOT
 
 Flavor=["Muon","Electron"]
-Type=["RECO","ID","SLT1","SLT2","DLTLeg1","DLTLeg2","SelQ_ID","SelQ_SLT1","SelQ_SLT2"]
+Type=["RECO","ID","SLT1","SLT2","DLTLeg1","DLTLeg2","SelQ_ID","SelQ_SLT1","SelQ_SLT2","DLTDZ"]
 Charge=["Plus","Minus","Inclusive"]
 DEBUG=1
 NREPLICA=100
@@ -75,6 +75,8 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
     if itype==None:
         if "RECO" in fname or "TrackerMuon" in fname:
             itype=0
+        elif "DZ" in fname:
+            itype=9
         elif not re.search("Mu[0-9]",fname) and not re.search("Ele[0-9][0-9]",fname):
             if "SelQ" not in fname:
                 itype=1

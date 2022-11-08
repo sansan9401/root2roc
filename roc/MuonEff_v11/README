@@ -1,0 +1,66 @@
+Muon efficiency for 2012, UL2016preVFP, UL2016postVFP, UL2017, UL2018
+
+Version: 11 (2022Nov08)
+
+Inputs:
+UL2016preVFP
+/SingleMuon/Run2016[B-F](-ver2)_HIPM_UL2016_MiniAODv2-v2/MINIAOD
+/DYJetsToMuMu_M-50_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
+UL2016postVFP
+/SingleMuon/Run2016[F-H]-UL2016_MiniAODv2-v2/MINIAOD
+/DYJetsToMuMu_M-50_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
+UL2017
+/SingleMuon/Run2017[B-F]-UL2017_MiniAODv2-v1/MINIAOD
+/DYJetsToMuMu_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
+UL2018
+/SingleMuon/Run2018[A-D]-UL2018_MiniAODv2_GT36-v[1,2]/MINIAOD
+/DYJetsToMuMu_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM
+
+Flags:
+		type	comment
+RECO		0	Reconstruction efficiency, ref : https://twiki.cern.ch/twiki/bin/view/CMS/MuonUL2016#RECO_efficiency
+ID		1	ID efficiency, TrackerMuon -> MediumID+LooseTrkIso
+SLTLow		2	Single muon trigger efficiency with lower pT threshold (IsoMu24)
+SLTHigh		3	Single muon trigger efficiency with higher pT threshold (2017:IsoMu27)
+DLTLeg1		4	Double muon trigger Leg1 filter efficiency
+DLTLeg2		5	Double muon trigger Leg2 filter efficiency
+DLTDZ           9       Double muon trigger DZ filter efficiency
+
+Variations:
+		set	nmember	comment
+Default		0	1	nominal efficiency
+Stat		1	1	stat. uncertainty
+Stat		2	100	stat. replicas
+AltSig		3	1	Alternative signal shape (Guassian -> Crystal-Ball convolution)
+AltBkg		4	1	Alternative background shape (Expo -> CMSShape)
+AltMC		5	1	Alternative MC generator (MiNNLO->MadGraph)
+AltTag		6	2	Alternative Tag isolation (0.15 -> 0.1,0.2)
+AltMassWindow	7	2	Alternative Z-mass window
+AltMassBin	8    	2	Alternative mass binning (nbins=60 -> 50,75)
+
+
+ChangeLog:
+v4: 2021Dec29
+    First version using MiNNLO samples, and MiniAODs
+
+v8: 2022Jul18
+    MiniAODv1 -> MiniAODv2
+    Improve mathcing between tracks and muons
+    Improve fitting - Automatic Refit
+    Finer turn-on binning in IsoMu24
+    pT bins up to 200 GeV
+
+v9.1: Fill empty set/member with central values
+      Remove replica set
+v9.2: Increase significant figures (3->5)
+
+v10.0: 1GeV bins in turn-on, coarse bins in high-pt
+       Switch to (true)5 digits
+       Add AltSig, AltBkg
+       Add RECO effs from POG
+
+v11: Add DLT DZ filter efficiency (index 9)
