@@ -2,7 +2,7 @@ import os,sys,re,json,random
 import ROOT
 
 Flavor=["Muon","Electron"]
-Type=["RECO","ID","SLT1","SLT2","DLTLeg1","DLTLeg2","SelQ_ID","SelQ_SLT1","SelQ_SLT2","DLTDZ"]
+Type=["RECO","ID","SLT1","SLT2","DLTLeg1","DLTLeg2","SelQ_ID","SelQ_SLT1","SelQ_SLT2","DLTDZ","Tracking"]
 Charge=["Plus","Minus","Inclusive"]
 DEBUG=1
 NREPLICA=100
@@ -73,8 +73,10 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
         if DEBUG>1: print("Flavor: "+Flavor[iflavor])
 
     if itype==None:
-        if "RECO" in fname or "TrackerMuon" in fname:
+        if "RECO" in fname or "StandAloneMuon" in fname:
             itype=0
+        elif "GlobalMuon" in fname:
+            itype=10
         elif "DZ" in fname:
             itype=9
         elif not re.search("Mu[0-9]",fname) and not re.search("Ele[0-9][0-9]",fname):
@@ -197,7 +199,7 @@ def root2str(config):
             out+=["ETA {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=etaNbins,bintype=-1,bins=" ".join(map(str,etaBins)))]            
 
         if IsUniformBins(ptAxis):
-            out+=["PT {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=ptNbins,bintype=ptAxis.GetBinWidth(1),lowedge=ptAxis.GetBinLowEdge(1))]
+            out+=["PT {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=ptNbins,binwidth=ptAxis.GetBinWidth(1),lowedge=ptAxis.GetBinLowEdge(1))]
         else:
             ptBins=[ptAxis.GetBinUpEdge(i) for i in range(ptNbins+1)]
             out+=["PT {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=ptNbins,bintype=-1,bins=" ".join(map(str,ptBins)))]
@@ -268,7 +270,7 @@ if __name__ =='__main__':
                             if c: configs+=[c]
             if "Muon" in args.input:
                 for sample in ["data","sim"]:
-                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(4,1),(5,0),(5,1),(6,0),(6,1)]:
+                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(4,1),(5,0),(6,0),(7,0),(8,0),(9,0),(9,1),(10,0),(10,1)]:
                         key="{}_s{}m{}".format(sample,i,j)
                         if key not in keys:
                             c=MakeConfig(fname,key,option="dummy")
