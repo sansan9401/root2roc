@@ -46,11 +46,11 @@ AltTag		5	1	Alternative Tag selection (higher tag pT threshold)
 AltMC		6	1	Alternative MC generator (MiNNLO->MadGraph)
 AltSub		7	1	Alternative Same-Sign subtraction weight (-1.0 -> -0.6)
 NoGenMatching	8	1	Without gen-matching
-Pileup		8	2	Pile-up up/down variation
-Prefiring	9	2	Prefiring up/down variation
-ZptWeight	10	1	With Z pT reweight
-Z0Weight	11	1	With Vertex-Z reweight
-LowPtSF		12	1	As low pT TnP is not accurate, nominal set uses pT=20 result for pT<20 region. But this set uses low pT result. (only for RunII ID SF)
+Pileup		9	2	Pile-up up/down variation
+Prefiring	10	2	Prefiring up/down variation
+ZptWeight	11	1	With Z pT reweight
+Z0Weight	12	1	With Vertex-Z reweight
+LowPtSF		13	1	As low pT TnP is not accurate, nominal set uses pT=20 result for pT<20 region. But this set uses low pT result. (only for RunII ID SF)
 
 ChangeLog:
 v3: Improve Leg1 low pT by considering L1 pt threshold
