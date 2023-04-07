@@ -73,7 +73,7 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
         if DEBUG>1: print("Flavor: "+Flavor[iflavor])
 
     if itype==None:
-        if "RECO" in fname or "StandAloneMuon" in fname:
+        if "RECO" in fname or "StandAloneMuon" in fname or "TrackerMuon" in fname:
             itype=0
         elif "GlobalMuon" in fname:
             itype=10
