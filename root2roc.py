@@ -270,7 +270,7 @@ if __name__ =='__main__':
                             if c: configs+=[c]
             if "Muon" in args.input:
                 for sample in ["data","sim"]:
-                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(4,1),(5,0),(6,0),(7,0),(8,0),(9,0),(9,1),(10,0),(10,1)]:
+                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(4,1),(5,0),(5,1),(6,0),(7,0),(8,0),(9,0),(9,1),(10,0),(10,1)]:
                         key="{}_s{}m{}".format(sample,i,j)
                         if key not in keys:
                             c=MakeConfig(fname,key,option="dummy")
