@@ -1,6 +1,6 @@
 Muon efficiency for 2012, UL2016preVFP, UL2016postVFP, UL2017, UL2018
 
-Version: 16 (2023June21)
+Version: 16 (2023June23)
 
 Inputs:
 UL2016preVFP
@@ -45,6 +45,7 @@ NoL1pre 	9	1	Without L1prefire weight
 z0		10	1	With z0 vertex weight
 AltMassWindow	11	2	Alternative Z-mass window
 AltMassBin	12    	2	Alternative mass binning (nbins=60 -> 50,75)
+Residual	13    	1	residual difference (ID only)
 
 
 ChangeLog:
@@ -83,3 +84,4 @@ v15: Reco efficiency in eta 1D, and pt-inclusive
 
 v16: Based on Rochester Corrected pt of Tag, Probe muons
      noPU -> PUup, down, and Newer 2017,18 Data(GT36)
+     Add residual systematic uncertainty

@@ -1,7 +1,7 @@
 ------------------------------------ [ roc/MuonEff_v16/muon_2016a.txt ] -----------------------------------------
 Flavor   Set Mem  isMC   Type           Charge      File                                                                            Key                 Option    
-Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data                          
-Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim                           
+Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data                          
+Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim                           
 Muon     0   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data                          
 Muon     0   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim                           
 Muon     0   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                          
@@ -18,8 +18,8 @@ Muon     0   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     0   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                           
 Muon     0   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data                          
 Muon     0   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim                           
-Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s0m0           err       
-Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s0m0            err       
+Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s0m0           err       
+Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s0m0            err       
 Muon     1   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s0m0           err       
 Muon     1   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s0m0            err       
 Muon     1   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s0m0           err       
@@ -36,8 +36,8 @@ Muon     1   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     1   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s0m0            err       
 Muon     1   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s0m0           err       
 Muon     1   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s0m0            err       
-Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s1m0                     
-Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s1m0                      
+Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s1m0                     
+Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s1m0                      
 Muon     3   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s1m0                     
 Muon     3   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s1m0                      
 Muon     3   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                dummy     
@@ -54,8 +54,8 @@ Muon     3   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     3   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
 Muon     3   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s1m0                     
 Muon     3   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s1m0                      
-Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s2m0                     
-Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s2m0                      
+Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s2m0                     
+Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s2m0                      
 Muon     4   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s2m0                     
 Muon     4   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s2m0                      
 Muon     4   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                dummy     
@@ -72,8 +72,8 @@ Muon     4   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     4   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
 Muon     4   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s2m0                     
 Muon     4   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s2m0                      
-Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s3m0                     
-Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s3m0                      
+Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s3m0                     
+Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s3m0                      
 Muon     5   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s3m0                     
 Muon     5   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s3m0                      
 Muon     5   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s3m0                     
@@ -90,10 +90,10 @@ Muon     5   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     5   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s3m0                      
 Muon     5   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s3m0                     
 Muon     5   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s3m0                      
-Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s4m0                     
-Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s4m1                     
-Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s4m0                      
-Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s4m1                      
+Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s4m0                     
+Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s4m1                     
+Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s4m0                      
+Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s4m1                      
 Muon     6   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s4m0                     
 Muon     6   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s4m1                     
 Muon     6   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s4m0                      
@@ -126,10 +126,10 @@ Muon     6   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/
 Muon     6   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s4m1                     
 Muon     6   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s4m0                      
 Muon     6   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s4m1                      
-Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s5m0                     
-Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s5m1                     
-Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s5m0                      
-Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s5m1                      
+Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s5m0                     
+Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s5m1                     
+Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s5m0                      
+Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s5m1                      
 Muon     7   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s5m0                     
 Muon     7   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s5m1                     
 Muon     7   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s5m0                      
@@ -162,8 +162,8 @@ Muon     7   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/
 Muon     7   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s5m1                     
 Muon     7   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s5m0                      
 Muon     7   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s5m1                      
-Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s6m0                     
-Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s6m0                      
+Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s6m0                     
+Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s6m0                      
 Muon     8   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s6m0                     
 Muon     8   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s6m0                      
 Muon     8   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s6m0                     
@@ -180,8 +180,8 @@ Muon     8   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     8   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s6m0                      
 Muon     8   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s6m0                     
 Muon     8   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s6m0                      
-Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s7m0                     
-Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s7m0                      
+Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s7m0                     
+Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s7m0                      
 Muon     9   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s7m0                     
 Muon     9   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s7m0                      
 Muon     9   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s7m0                     
@@ -198,8 +198,8 @@ Muon     9   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     9   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s7m0                      
 Muon     9   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s7m0                     
 Muon     9   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s7m0                      
-Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s8m0                     
-Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s8m0                      
+Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s8m0                     
+Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s8m0                      
 Muon     10  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s8m0                     
 Muon     10  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s8m0                      
 Muon     10  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s8m0                     
@@ -216,10 +216,10 @@ Muon     10  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/
 Muon     10  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s8m0                      
 Muon     10  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s8m0                     
 Muon     10  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s8m0                      
-Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s9m0                     
-Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s9m1                     
-Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s9m0                      
-Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s9m1                      
+Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s9m0                     
+Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s9m1                     
+Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s9m0                      
+Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s9m1                      
 Muon     11  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s9m0                     
 Muon     11  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s9m1                     
 Muon     11  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s9m0                      
@@ -252,10 +252,10 @@ Muon     11  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/
 Muon     11  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s9m1                     
 Muon     11  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s9m0                      
 Muon     11  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s9m1                      
-Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s10m0                    
-Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       data_s10m1                    
-Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s10m0                     
-Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/StandAloneMuon_Inclusive.root                       sim_s10m1                     
+Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s10m0                    
+Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data_s10m1                    
+Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s10m0                     
+Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim_s10m1                     
 Muon     12  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s10m0                    
 Muon     12  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s10m1                    
 Muon     12  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s10m0                     
@@ -288,10 +288,28 @@ Muon     12  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/
 Muon     12  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data_s10m1                    
 Muon     12  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s10m0                     
 Muon     12  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim_s10m1                     
+Muon     13  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          data                dummy     
+Muon     13  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016a/TrackerMuon_Inclusive.root                          sim                 dummy     
+Muon     13  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 data_s11m0                    
+Muon     13  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016a/MediumID_LooseTrkIso_Inclusive.root                 sim_s11m0                     
+Muon     13  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                dummy     
+Muon     13  0    1:MC   2:SLT1         0:Plus      root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Plus.root              sim                 dummy     
+Muon     13  0    0:data 2:SLT1         1:Minus     root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Minus.root             data                dummy     
+Muon     13  0    1:MC   2:SLT1         1:Minus     root/MuonEff_v16/muon_2016a/IsoMu24_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2016a/Mu17Leg1_MediumID_LooseTrkIso_Plus.root             data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2016a/Mu17Leg1_MediumID_LooseTrkIso_Plus.root             sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2016a/Mu17Leg1_MediumID_LooseTrkIso_Minus.root            data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2016a/Mu17Leg1_MediumID_LooseTrkIso_Minus.root            sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Plus.root              data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Plus.root              sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016a/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
+Muon     13  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           data                dummy     
+Muon     13  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016a/GlobalMuon_Inclusive.root                           sim                 dummy     
 ------------------------------------ [ roc/MuonEff_v16/muon_2016b.txt ] -----------------------------------------
 Flavor   Set Mem  isMC   Type           Charge      File                                                                            Key                 Option    
-Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data                          
-Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim                           
+Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data                          
+Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim                           
 Muon     0   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data                          
 Muon     0   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim                           
 Muon     0   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                          
@@ -308,8 +326,8 @@ Muon     0   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     0   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                           
 Muon     0   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data                          
 Muon     0   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim                           
-Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s0m0           err       
-Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s0m0            err       
+Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s0m0           err       
+Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s0m0            err       
 Muon     1   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s0m0           err       
 Muon     1   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s0m0            err       
 Muon     1   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s0m0           err       
@@ -326,8 +344,8 @@ Muon     1   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     1   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s0m0            err       
 Muon     1   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s0m0           err       
 Muon     1   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s0m0            err       
-Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s1m0                     
-Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s1m0                      
+Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s1m0                     
+Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s1m0                      
 Muon     3   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s1m0                     
 Muon     3   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s1m0                      
 Muon     3   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                dummy     
@@ -344,8 +362,8 @@ Muon     3   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     3   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
 Muon     3   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s1m0                     
 Muon     3   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s1m0                      
-Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s2m0                     
-Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s2m0                      
+Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s2m0                     
+Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s2m0                      
 Muon     4   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s2m0                     
 Muon     4   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s2m0                      
 Muon     4   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                dummy     
@@ -362,8 +380,8 @@ Muon     4   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     4   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
 Muon     4   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s2m0                     
 Muon     4   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s2m0                      
-Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s3m0                     
-Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s3m0                      
+Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s3m0                     
+Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s3m0                      
 Muon     5   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s3m0                     
 Muon     5   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s3m0                      
 Muon     5   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s3m0                     
@@ -380,10 +398,10 @@ Muon     5   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     5   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s3m0                      
 Muon     5   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s3m0                     
 Muon     5   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s3m0                      
-Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s4m0                     
-Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s4m1                     
-Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s4m0                      
-Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s4m1                      
+Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s4m0                     
+Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s4m1                     
+Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s4m0                      
+Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s4m1                      
 Muon     6   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s4m0                     
 Muon     6   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s4m1                     
 Muon     6   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s4m0                      
@@ -416,10 +434,10 @@ Muon     6   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/
 Muon     6   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s4m1                     
 Muon     6   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s4m0                      
 Muon     6   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s4m1                      
-Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s5m0                     
-Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s5m1                     
-Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s5m0                      
-Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s5m1                      
+Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s5m0                     
+Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s5m1                     
+Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s5m0                      
+Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s5m1                      
 Muon     7   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s5m0                     
 Muon     7   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s5m1                     
 Muon     7   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s5m0                      
@@ -452,8 +470,8 @@ Muon     7   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/
 Muon     7   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s5m1                     
 Muon     7   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s5m0                      
 Muon     7   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s5m1                      
-Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s6m0                     
-Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s6m0                      
+Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s6m0                     
+Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s6m0                      
 Muon     8   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s6m0                     
 Muon     8   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s6m0                      
 Muon     8   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s6m0                     
@@ -470,8 +488,8 @@ Muon     8   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     8   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s6m0                      
 Muon     8   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s6m0                     
 Muon     8   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s6m0                      
-Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s7m0                     
-Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s7m0                      
+Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s7m0                     
+Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s7m0                      
 Muon     9   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s7m0                     
 Muon     9   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s7m0                      
 Muon     9   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s7m0                     
@@ -488,8 +506,8 @@ Muon     9   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     9   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s7m0                      
 Muon     9   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s7m0                     
 Muon     9   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s7m0                      
-Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s8m0                     
-Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s8m0                      
+Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s8m0                     
+Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s8m0                      
 Muon     10  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s8m0                     
 Muon     10  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s8m0                      
 Muon     10  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data_s8m0                     
@@ -506,10 +524,10 @@ Muon     10  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/
 Muon     10  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim_s8m0                      
 Muon     10  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s8m0                     
 Muon     10  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s8m0                      
-Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s9m0                     
-Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s9m1                     
-Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s9m0                      
-Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s9m1                      
+Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s9m0                     
+Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s9m1                     
+Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s9m0                      
+Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s9m1                      
 Muon     11  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s9m0                     
 Muon     11  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s9m1                     
 Muon     11  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s9m0                      
@@ -542,10 +560,10 @@ Muon     11  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/
 Muon     11  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s9m1                     
 Muon     11  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s9m0                      
 Muon     11  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s9m1                      
-Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s10m0                    
-Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       data_s10m1                    
-Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s10m0                     
-Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/StandAloneMuon_Inclusive.root                       sim_s10m1                     
+Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s10m0                    
+Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data_s10m1                    
+Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s10m0                     
+Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim_s10m1                     
 Muon     12  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s10m0                    
 Muon     12  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s10m1                    
 Muon     12  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s10m0                     
@@ -578,10 +596,28 @@ Muon     12  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/
 Muon     12  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data_s10m1                    
 Muon     12  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s10m0                     
 Muon     12  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim_s10m1                     
+Muon     13  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          data                dummy     
+Muon     13  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2016b/TrackerMuon_Inclusive.root                          sim                 dummy     
+Muon     13  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 data_s11m0                    
+Muon     13  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2016b/MediumID_LooseTrkIso_Inclusive.root                 sim_s11m0                     
+Muon     13  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              data                dummy     
+Muon     13  0    1:MC   2:SLT1         0:Plus      root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Plus.root              sim                 dummy     
+Muon     13  0    0:data 2:SLT1         1:Minus     root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Minus.root             data                dummy     
+Muon     13  0    1:MC   2:SLT1         1:Minus     root/MuonEff_v16/muon_2016b/IsoMu24_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2016b/Mu17Leg1_MediumID_LooseTrkIso_Plus.root             data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2016b/Mu17Leg1_MediumID_LooseTrkIso_Plus.root             sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2016b/Mu17Leg1_MediumID_LooseTrkIso_Minus.root            data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2016b/Mu17Leg1_MediumID_LooseTrkIso_Minus.root            sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Plus.root              data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Plus.root              sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2016b/Mu8Leg2_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
+Muon     13  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           data                dummy     
+Muon     13  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2016b/GlobalMuon_Inclusive.root                           sim                 dummy     
 ------------------------------------ [ roc/MuonEff_v16/muon_2017.txt ] -----------------------------------------
 Flavor   Set Mem  isMC   Type           Charge      File                                                                            Key                 Option    
-Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data                          
-Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim                           
+Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data                          
+Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim                           
 Muon     0   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data                          
 Muon     0   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim                           
 Muon     0   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                          
@@ -602,8 +638,8 @@ Muon     0   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     0   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                           
 Muon     0   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data                          
 Muon     0   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim                           
-Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s0m0           err       
-Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s0m0            err       
+Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s0m0           err       
+Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s0m0            err       
 Muon     1   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s0m0           err       
 Muon     1   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s0m0            err       
 Muon     1   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s0m0           err       
@@ -624,8 +660,8 @@ Muon     1   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     1   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s0m0            err       
 Muon     1   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s0m0           err       
 Muon     1   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s0m0            err       
-Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s1m0                     
-Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s1m0                      
+Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s1m0                     
+Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s1m0                      
 Muon     3   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s1m0                     
 Muon     3   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s1m0                      
 Muon     3   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                dummy     
@@ -646,8 +682,8 @@ Muon     3   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     3   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
 Muon     3   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s1m0                     
 Muon     3   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s1m0                      
-Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s2m0                     
-Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s2m0                      
+Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s2m0                     
+Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s2m0                      
 Muon     4   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s2m0                     
 Muon     4   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s2m0                      
 Muon     4   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                dummy     
@@ -668,8 +704,8 @@ Muon     4   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     4   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
 Muon     4   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s2m0                     
 Muon     4   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s2m0                      
-Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s3m0                     
-Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s3m0                      
+Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s3m0                     
+Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s3m0                      
 Muon     5   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s3m0                     
 Muon     5   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s3m0                      
 Muon     5   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s3m0                     
@@ -690,10 +726,10 @@ Muon     5   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     5   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s3m0                      
 Muon     5   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s3m0                     
 Muon     5   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s3m0                      
-Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s4m0                     
-Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s4m1                     
-Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s4m0                      
-Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s4m1                      
+Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s4m0                     
+Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s4m1                     
+Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s4m0                      
+Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s4m1                      
 Muon     6   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s4m0                     
 Muon     6   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s4m1                     
 Muon     6   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s4m0                      
@@ -734,10 +770,10 @@ Muon     6   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/G
 Muon     6   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s4m1                     
 Muon     6   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s4m0                      
 Muon     6   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s4m1                      
-Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s5m0                     
-Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s5m1                     
-Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s5m0                      
-Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s5m1                      
+Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s5m0                     
+Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s5m1                     
+Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s5m0                      
+Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s5m1                      
 Muon     7   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s5m0                     
 Muon     7   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s5m1                     
 Muon     7   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s5m0                      
@@ -778,8 +814,8 @@ Muon     7   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/G
 Muon     7   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s5m1                     
 Muon     7   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s5m0                      
 Muon     7   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s5m1                      
-Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s6m0                     
-Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s6m0                      
+Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s6m0                     
+Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s6m0                      
 Muon     8   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s6m0                     
 Muon     8   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s6m0                      
 Muon     8   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s6m0                     
@@ -800,8 +836,8 @@ Muon     8   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     8   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s6m0                      
 Muon     8   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s6m0                     
 Muon     8   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s6m0                      
-Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s7m0                     
-Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s7m0                      
+Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s7m0                     
+Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s7m0                      
 Muon     9   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s7m0                     
 Muon     9   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s7m0                      
 Muon     9   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s7m0                     
@@ -822,8 +858,8 @@ Muon     9   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     9   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s7m0                      
 Muon     9   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s7m0                     
 Muon     9   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s7m0                      
-Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s8m0                     
-Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s8m0                      
+Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s8m0                     
+Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s8m0                      
 Muon     10  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s8m0                     
 Muon     10  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s8m0                      
 Muon     10  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s8m0                     
@@ -844,10 +880,10 @@ Muon     10  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/M
 Muon     10  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s8m0                      
 Muon     10  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s8m0                     
 Muon     10  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s8m0                      
-Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s9m0                     
-Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s9m1                     
-Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s9m0                      
-Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s9m1                      
+Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s9m0                     
+Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s9m1                     
+Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s9m0                      
+Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s9m1                      
 Muon     11  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s9m0                     
 Muon     11  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s9m1                     
 Muon     11  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s9m0                      
@@ -888,10 +924,10 @@ Muon     11  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/G
 Muon     11  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s9m1                     
 Muon     11  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s9m0                      
 Muon     11  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s9m1                      
-Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s10m0                    
-Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        data_s10m1                    
-Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s10m0                     
-Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/StandAloneMuon_Inclusive.root                        sim_s10m1                     
+Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s10m0                    
+Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data_s10m1                    
+Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s10m0                     
+Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim_s10m1                     
 Muon     12  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s10m0                    
 Muon     12  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s10m1                    
 Muon     12  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s10m0                     
@@ -932,10 +968,32 @@ Muon     12  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/G
 Muon     12  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data_s10m1                    
 Muon     12  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s10m0                     
 Muon     12  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim_s10m1                     
+Muon     13  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           data                dummy     
+Muon     13  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2017/TrackerMuon_Inclusive.root                           sim                 dummy     
+Muon     13  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  data_s11m0                    
+Muon     13  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2017/MediumID_LooseTrkIso_Inclusive.root                  sim_s11m0                     
+Muon     13  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                dummy     
+Muon     13  0    1:MC   2:SLT1         0:Plus      root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Plus.root               sim                 dummy     
+Muon     13  0    0:data 2:SLT1         1:Minus     root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Minus.root              data                dummy     
+Muon     13  0    1:MC   2:SLT1         1:Minus     root/MuonEff_v16/muon_2017/IsoMu24_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
+Muon     13  0    0:data 3:SLT2         0:Plus      root/MuonEff_v16/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root               data                dummy     
+Muon     13  0    1:MC   3:SLT2         0:Plus      root/MuonEff_v16/muon_2017/IsoMu27_MediumID_LooseTrkIso_Plus.root               sim                 dummy     
+Muon     13  0    0:data 3:SLT2         1:Minus     root/MuonEff_v16/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root              data                dummy     
+Muon     13  0    1:MC   3:SLT2         1:Minus     root/MuonEff_v16/muon_2017/IsoMu27_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root              data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Plus.root              sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Minus.root             data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2017/Mu17Leg1_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Plus.root               data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Plus.root               sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2017/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
+Muon     13  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            data                dummy     
+Muon     13  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2017/GlobalMuon_Inclusive.root                            sim                 dummy     
 ------------------------------------ [ roc/MuonEff_v16/muon_2018.txt ] -----------------------------------------
 Flavor   Set Mem  isMC   Type           Charge      File                                                                            Key                 Option    
-Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data                          
-Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim                           
+Muon     0   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data                          
+Muon     0   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim                           
 Muon     0   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data                          
 Muon     0   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim                           
 Muon     0   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                          
@@ -952,8 +1010,8 @@ Muon     0   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     0   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                           
 Muon     0   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data                          
 Muon     0   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim                           
-Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s0m0           err       
-Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s0m0            err       
+Muon     1   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s0m0           err       
+Muon     1   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s0m0            err       
 Muon     1   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s0m0           err       
 Muon     1   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s0m0            err       
 Muon     1   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s0m0           err       
@@ -970,8 +1028,8 @@ Muon     1   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     1   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s0m0            err       
 Muon     1   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s0m0           err       
 Muon     1   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s0m0            err       
-Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s1m0                     
-Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s1m0                      
+Muon     3   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s1m0                     
+Muon     3   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s1m0                      
 Muon     3   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s1m0                     
 Muon     3   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s1m0                      
 Muon     3   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                dummy     
@@ -988,8 +1046,8 @@ Muon     3   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     3   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
 Muon     3   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s1m0                     
 Muon     3   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s1m0                      
-Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s2m0                     
-Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s2m0                      
+Muon     4   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s2m0                     
+Muon     4   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s2m0                      
 Muon     4   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s2m0                     
 Muon     4   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s2m0                      
 Muon     4   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                dummy     
@@ -1006,8 +1064,8 @@ Muon     4   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     4   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
 Muon     4   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s2m0                     
 Muon     4   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s2m0                      
-Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s3m0                     
-Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s3m0                      
+Muon     5   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s3m0                     
+Muon     5   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s3m0                      
 Muon     5   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s3m0                     
 Muon     5   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s3m0                      
 Muon     5   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s3m0                     
@@ -1024,10 +1082,10 @@ Muon     5   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     5   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s3m0                      
 Muon     5   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s3m0                     
 Muon     5   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s3m0                      
-Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s4m0                     
-Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s4m1                     
-Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s4m0                      
-Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s4m1                      
+Muon     6   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s4m0                     
+Muon     6   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s4m1                     
+Muon     6   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s4m0                      
+Muon     6   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s4m1                      
 Muon     6   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s4m0                     
 Muon     6   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s4m1                     
 Muon     6   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s4m0                      
@@ -1060,10 +1118,10 @@ Muon     6   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/G
 Muon     6   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s4m1                     
 Muon     6   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s4m0                      
 Muon     6   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s4m1                      
-Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s5m0                     
-Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s5m1                     
-Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s5m0                      
-Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s5m1                      
+Muon     7   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s5m0                     
+Muon     7   1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s5m1                     
+Muon     7   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s5m0                      
+Muon     7   1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s5m1                      
 Muon     7   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s5m0                     
 Muon     7   1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s5m1                     
 Muon     7   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s5m0                      
@@ -1096,8 +1154,8 @@ Muon     7   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/G
 Muon     7   1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s5m1                     
 Muon     7   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s5m0                      
 Muon     7   1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s5m1                      
-Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s6m0                     
-Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s6m0                      
+Muon     8   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s6m0                     
+Muon     8   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s6m0                      
 Muon     8   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s6m0                     
 Muon     8   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s6m0                      
 Muon     8   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s6m0                     
@@ -1114,8 +1172,8 @@ Muon     8   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     8   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s6m0                      
 Muon     8   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s6m0                     
 Muon     8   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s6m0                      
-Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s7m0                     
-Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s7m0                      
+Muon     9   0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s7m0                     
+Muon     9   0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s7m0                      
 Muon     9   0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s7m0                     
 Muon     9   0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s7m0                      
 Muon     9   0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s7m0                     
@@ -1132,8 +1190,8 @@ Muon     9   0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     9   0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s7m0                      
 Muon     9   0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s7m0                     
 Muon     9   0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s7m0                      
-Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s8m0                     
-Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s8m0                      
+Muon     10  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s8m0                     
+Muon     10  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s8m0                      
 Muon     10  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s8m0                     
 Muon     10  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s8m0                      
 Muon     10  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data_s8m0                     
@@ -1150,10 +1208,10 @@ Muon     10  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/M
 Muon     10  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim_s8m0                      
 Muon     10  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s8m0                     
 Muon     10  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s8m0                      
-Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s9m0                     
-Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s9m1                     
-Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s9m0                      
-Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s9m1                      
+Muon     11  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s9m0                     
+Muon     11  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s9m1                     
+Muon     11  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s9m0                      
+Muon     11  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s9m1                      
 Muon     11  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s9m0                     
 Muon     11  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s9m1                     
 Muon     11  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s9m0                      
@@ -1186,10 +1244,10 @@ Muon     11  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/G
 Muon     11  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s9m1                     
 Muon     11  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s9m0                      
 Muon     11  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s9m1                      
-Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s10m0                    
-Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        data_s10m1                    
-Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s10m0                     
-Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/StandAloneMuon_Inclusive.root                        sim_s10m1                     
+Muon     12  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s10m0                    
+Muon     12  1    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data_s10m1                    
+Muon     12  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s10m0                     
+Muon     12  1    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim_s10m1                     
 Muon     12  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s10m0                    
 Muon     12  1    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s10m1                    
 Muon     12  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s10m0                     
@@ -1222,3 +1280,21 @@ Muon     12  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/G
 Muon     12  1    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data_s10m1                    
 Muon     12  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s10m0                     
 Muon     12  1    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim_s10m1                     
+Muon     13  0    0:data 0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           data                dummy     
+Muon     13  0    1:MC   0:RECO         2:Inclusive root/MuonEff_v16/muon_2018/TrackerMuon_Inclusive.root                           sim                 dummy     
+Muon     13  0    0:data 1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  data_s11m0                    
+Muon     13  0    1:MC   1:ID           2:Inclusive root/MuonEff_v16/muon_2018/MediumID_LooseTrkIso_Inclusive.root                  sim_s11m0                     
+Muon     13  0    0:data 2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               data                dummy     
+Muon     13  0    1:MC   2:SLT1         0:Plus      root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Plus.root               sim                 dummy     
+Muon     13  0    0:data 2:SLT1         1:Minus     root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root              data                dummy     
+Muon     13  0    1:MC   2:SLT1         1:Minus     root/MuonEff_v16/muon_2018/IsoMu24_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root              data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      0:Plus      root/MuonEff_v16/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Plus.root              sim                 dummy     
+Muon     13  0    0:data 4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Minus.root             data                dummy     
+Muon     13  0    1:MC   4:DLTLeg1      1:Minus     root/MuonEff_v16/muon_2018/Mu17Leg1_MediumID_LooseTrkIso_Minus.root             sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Plus.root               data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      0:Plus      root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Plus.root               sim                 dummy     
+Muon     13  0    0:data 5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              data                dummy     
+Muon     13  0    1:MC   5:DLTLeg2      1:Minus     root/MuonEff_v16/muon_2018/Mu8Leg2_MediumID_LooseTrkIso_Minus.root              sim                 dummy     
+Muon     13  0    0:data 10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            data                dummy     
+Muon     13  0    1:MC   10:Tracking    2:Inclusive root/MuonEff_v16/muon_2018/GlobalMuon_Inclusive.root                            sim                 dummy     
