@@ -1,0 +1,99 @@
+Electron efficiency for 2012, UL2016preVFP, UL2016postVFP, UL2017, UL2018
+
+Version: 18 (2023Nov22)
+
+Inputs:
+UL2016preVFP
+/SingleElectron/Run2016[B-F](-ver2)_HIPM_UL2016_MiniAODv2-v[2,5]/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v1/MINIAODSIM
+UL2016postVFP
+/SingleElectron/Run2016[F-H]-UL2016_MiniAODv2-v2/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v1/MINIAODSIM
+UL2017
+/SingleElectron/Run2017[B-F]-UL2017_MiniAODv2-v1/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM
+UL2018
+/EGamma/Run2018[A-D]-UL2018_MiniAODv2-v[1,2]/MINIAOD
+/DYJetsToEE_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM
+/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1_ext1-v1/MINIAODSIM
+
+
+Flags:
+		type	comment
+RECO		0	Reconstruction efficiency, SuperCluster -> gsfElectron, ref:https://twiki.cern.ch/twiki/bin/view/CMS/EgammaUL2016To2018
+			Only ptAbove20 results are included since ptBelow20 results have large uncertainties
+ID		1	ID efficiency, gsfElectron -> MediumID
+SLTLow		2	Single electron trigger efficiency with lower pT threshold (2016,2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf)
+SLTHigh		3	Single electron trigger efficiency with higher pT threshold (2017,2018:Ele32_WPTight_Gsf)
+DLTLeg1		4	Double electron trigger Leg1 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg1Filter
+DLTLeg2		5	Double electron trigger Leg2 filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLTrackIsoLeg2Filter
+SelQ ID		6	Charge ID efficiency, MediumID -> Selective charge ID
+SelQ SLTLow	7	Single electron trigger efficiency with lower pT threshold (2016,2017:Ele27_WPTight_Gsf, 2018:Ele28_WPTight_Gsf) for MediumID+SelQ
+SelQ SLTHigh	8	Single electron trigger efficiency with higher pT threshold (2017,2018:Ele32_WPTight_Gsf) for MediumID+SelQ
+DLTDZ		9	Double electron trigger DZ filter efficiency, hltEle23Ele12CaloIdLTrackIdLIsoVLDZFilter
+
+Variations:
+		set	nmember	comment
+Default		0	1	nominal efficiency
+Stat		1	1	stat. uncertainty
+Stat		2	100	stat. replicas
+AltBkg          3       1       Floating background function parameters
+AltBkg2         4       1       Alternative background shape (CMSShape -> Expo)
+AltSig          5       1       Alternative signal shape (RECO -> RECO*Guassian)
+AltSig2         6       1       Alternative signal shape (RECO -> GEN*CB)
+AltMC           7       1       Alternative MC generator (MiNNLO -> MadGraph)
+AltTag		8	1	Alternative Tag selection (higher tag pT threshold)
+Pileup		9	2	Pile-up up/down variation
+Prefiring	10	2	Prefiring up/down variation
+ZptWeight	11	1	Without Z pT reweight
+Z0Weight	12	1	With Vertex-Z reweight
+AltFitRange     13      2       Alternative fit range ([70,112] -> [52,150], [80,102])
+AltMassWindow   14      2       Alternative mass window ([80,102] -> [70,112], [86,96])
+AltMassBin      15      2       Alternative mass binning (1GeV -> 2GeV, 0.5GeV)
+GenMatching	16	1	Looser gen-matching
+UseFit          17      1       Using fitting instead of counting (HLT only)
+AltSub		18	1	Alternative Same-Sign subtraction weight (-1.0 -> -0.6)
+LowPtSF		19	1	As low pT TnP is not accurate, nominal set uses pT=20 result for pT<20 region. But this set uses low pT result. (only for RunII ID SF)
+Residual        20      1       residual difference (ID only)
+
+
+ChangeLog:
+v3: Improve Leg1 low pT by considering L1 pt threshold
+v4: Changing evaluation method for simulation (counting ->  fitting)
+    Same-Sign subtraction
+    Additional systematic sources
+v4.1: Using eta instead of eta_SC
+      MediumID+SelQ efficiency instead of TightID+SelQ
+      New Type index
+v7: skip v5 and v6 to sync version with Rochester group
+    finer pT binning for the SLT efficiencies
+    fitting -> counting method for the trigger efficiencies
+    Add charge-inclusive results (ChargeIndex=2)
+v8: MiniAODv1 -> MiniAODv2
+    Use pT=20 result for pT<20 in ID SF
+    Apply prefiring correction (no significant effect)
+    + fixbug(2022Jul22): typo in tag selection in Ele28_SelQ_MediumID
+v9: Fine eta binning for HLT efficiencies (10 -> 50 bins)
+v9.1: Fill empty set/member with central values
+      Remove replica set
+v9.2: Increase significant figures (3->5)
+v11: Add DLT DZ filter efficiency (index 9)
+v12: Finer eta binning for ID efficiencies
+     Sync eta binning with the detector gap boundary
+     fitting -> counting method for SelQ ID efficiencies
+     Not using same-sign subtraction for counting method
+     Increase significant digits
+v13: Electron energy correction (Aepcor)
+     HLT matching DR03->DR01
+     more systematics
+     pt bin [45,70] -> [45,50,60,70]
+     fixbug: 2012 alttag
+v15: Replace POG RECO eff (2D: eta,pT) with our own one (1D: eta)
+     New initial parameter guess for fitting, so MediumID eff is also updated
+v16: Add residual systematic uncertainty
+v17: Reduce fit paramsters
+     Add more systematic uncertainties
+v18: Fix 2018 RECO altsig2 by reducing free parameters

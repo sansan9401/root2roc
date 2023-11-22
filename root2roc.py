@@ -160,7 +160,7 @@ def MakeConfig(fname,key=None,isMC=None,iflavor=None,itype=None,icharge=None,ise
     else:
         if DEBUG>1: print("imem: "+str(imem))
         
-    if "dummy" in option:
+    if "dummy" in option or "ones" in option:
         key=key.split("_")[0]
 
     return {"file":fname,"key":key,"isMC":isMC,"iflavor":iflavor,"itype":itype,"icharge":icharge,"iset":iset,"imem":imem,"ref":ref,"option":option}
@@ -185,6 +185,10 @@ def root2str(config):
     else:
         fin=ROOT.TFile(str(fname))
         hist=fin.Get(str(key))
+        if "ones" in option:
+            for i in range(hist.GetNcells()):
+                hist.SetBinContent(i,1)
+                hist.SetBinError(i,0)
 
         etaAxis=hist.GetXaxis()
         ptAxis=hist.GetYaxis()
@@ -270,10 +274,13 @@ if __name__ =='__main__':
                             if c: configs+=[c]
             if "Muon" in args.input:
                 for sample in ["data","sim"]:
-                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(5,0),(6,0),(7,0),(7,1),(8,0),(8,1),(9,0),(10,0),(11,0),(11,1),(12,0),(12,1),(13,0),(13,1),(14,0),(15,0),(16,0)]:
+                    for (i,j) in [(1,0),(2,0),(3,0),(4,0),(5,0),(6,0),(7,0),(7,1),(8,0),(8,1),(9,0),(10,0),(11,0),(11,1),(12,0),(12,1),(13,0),(13,1),(14,0),(15,0),(16,0),(17,0),(18,0)]:
                         key="{}_s{}m{}".format(sample,i,j)
                         if key not in keys:
-                            c=MakeConfig(fname,key,option="dummy")
+                            if i==17 and j==0 and "TrackerMuonOrGlobalMuon" in fname:
+                                c=MakeConfig(fname,key,option="ones")
+                            else:
+                                c=MakeConfig(fname,key,option="dummy")
                             if c: configs+=[c]
 
         configs=sorted(configs,key=lambda k: k['isMC'])
