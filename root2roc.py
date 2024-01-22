@@ -197,7 +197,7 @@ def root2str(config):
         ptNbins=ptAxis.GetNbins()
 
         if IsUniformBins(etaAxis):
-            out+=["ETA {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=etaNbins,binwidth=round(etaAxis.GetBinWidth(1),4),lowedge=etaAxis.GetBinLowEdge(1))]
+            out+=["ETA {flavor} {type} {nbin} {binwidth} {lowedge}".format(flavor=iflavor,type=itype,nbin=etaNbins,binwidth=round(etaAxis.GetBinWidth(1),4),lowedge=round(etaAxis.GetBinLowEdge(1),6))]
         else:
             etaBins=[round(etaAxis.GetBinUpEdge(i),4) for i in range(etaNbins+1)]
             out+=["ETA {flavor} {type} {nbin} {bintype} {bins}".format(flavor=iflavor,type=itype,nbin=etaNbins,bintype=-1,bins=" ".join(map(str,etaBins)))]            
@@ -282,6 +282,53 @@ if __name__ =='__main__':
                             else:
                                 c=MakeConfig(fname,key,option="dummy")
                             if c: configs+=[c]
+
+        # deco test for v20
+        decoconfs=[
+            ["All"],
+            ["All"],
+            ["All"],
+            ["RECO","ID"],
+            ["RECO","ID"],
+            ["RECO","ID"],
+            ["RECO","ID"],
+            ["RECO","ID","HLT"],
+            ["RECO","ID","HLT"],
+            ["All"],
+            ["All"],
+            ["All"],
+            ["All"],
+            ["RECO","ID"],
+            ["RECO","ID","HLT"],
+            ["RECO","ID"],
+            ["RECO","ID"],
+            ["All"],
+            ["All"],
+            ["All"],
+            ["All"],
+            ]
+            
+            
+        def GetGroup(config):
+            if config['itype'] in [0,10]:
+                return "RECO"
+            elif config['itype'] in [1,6]:
+                return "ID"
+            elif config['itype'] in [2,3,4,5,7,8,9]:
+                return "HLT"
+            else:
+                print("Unknown group for itype",config['itype'])
+                pass
+            
+        newconfigs=[]
+        for config in configs:
+            for group in decoconfs[config['iset']]:
+                c=config.copy()
+                c['iset']=sum([len(decoconf) for decoconf in decoconfs[:config['iset']]])+decoconfs[config['iset']].index(group)
+                if group not in [GetGroup(c),"All"]:
+                    c['key']=c['key'].split("_")[0]
+                newconfigs+=[c]
+        configs=newconfigs
 
         configs=sorted(configs,key=lambda k: k['isMC'])
         configs=sorted(configs,key=lambda k: k['icharge'])
